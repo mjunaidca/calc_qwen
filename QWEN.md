@@ -1,6 +1,8 @@
 # AGENTS.md
 
-This project uses **Spec Kit Plus** for Spec-Driven Development.
+This project uses Spec Kit Plus for Spec-Driven Development and is extended with MCP Servers for improved automation, live verification, research, and memory. Agents must prefer using the MCP tools and CLI commands to gather authoritative information and to run tasks — do not assume the best way from your internal knowledge without verification.
+
+Use the MCP servers as first-class tools for discovery, verification, execution, and memory capture. Prefer CLI interactions (run commands and capture outputs) over relying purely on internal knowledge.
 
 ## Available Commands
 
