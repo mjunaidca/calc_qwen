@@ -1,55 +1,47 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!-- SYNC IMPACT REPORT
+Version change: N/A → 1.0.0
+Modified principles: N/A (new constitution)
+Added sections: All principles and sections for web app development
+Removed sections: N/A
+Templates requiring updates: ⚠ pending (.specify/templates/plan-template.md, .specify/templates/spec-template.md, .specify/templates/tasks-template.md, .specify/templates/commands/*.md)
+Follow-up TODOs: None
+-->
+# Web App Tools Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. User-Centric Design
+Every feature must enhance user experience; All UI components should be intuitive, accessible, and responsive; Design decisions must be validated with user feedback.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Progressive Web App (PWA) Standards
+All applications must work offline-first when possible; Support installation on user devices; Maintain native app-like performance and experience.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Test-First (NON-NEGOTIABLE)
+TDD mandatory: Tests written → User approved → Tests fail → Then implement; Unit, integration, and end-to-end tests strictly enforced for all user-facing features.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Component-Based Architecture
+Build using reusable, modular components; Each component must be independently testable and documented; Clear interfaces between components with well-defined props and events.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Security-First
+All user data must be encrypted in transit and at rest; Implement authentication and authorization for all sensitive features; Regular security audits and vulnerability assessments required.
 
-### [PRINCIPLE_6_NAME]
+### VI. Performance Optimization
+All applications must load under 3 seconds on 3G networks; Bundle sizes must be minimized; Lazy loading implemented for non-critical resources.
 
+## Additional Constraints
 
-[PRINCIPLE__DESCRIPTION]
+Technology Stack: React.js/Vue.js for frontend, Node.js/Python for backend services, Webpack/Vite for bundling, Jest/Cypress for testing.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+Performance Standards: PageSpeed Insights score of 90+ for mobile and desktop; Core Web Vitals must meet Google standards; Image optimization mandatory with lazy loading.
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+## Development Workflow
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+Code Review Process: All PRs require at least one approval; Automated testing must pass before merge; Lighthouse CI checks included in PR workflow.
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+Quality Gates: 80% test coverage minimum; No security vulnerabilities of medium or higher severity; Performance budgets enforced in CI/CD pipeline.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This constitution supersedes all other development practices; All amendments must be documented and approved by core team; All PRs/reviews must verify compliance with these principles.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: TODO(RATIFICATION_DATE): to be determined | **Last Amended**: 2025-10-03
